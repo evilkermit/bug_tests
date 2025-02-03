@@ -22,7 +22,7 @@ class TestApp:
 
         with VAppLayout(self.server) as layout:
             with layout.root:
-                vuetify.VBtn("Set Colormap to Plasma", color="green", click=self.change_colormap)
+                vuetify.VBtn("Set Colormap to coolwarm", color="green", click=self.change_colormap)
                 with html.Div(classes="d-flex flex-row h-100"):
                     self.view1 = plotter_ui(self.plotter1)
                     self.view2 = plotter_ui(self.plotter2)
